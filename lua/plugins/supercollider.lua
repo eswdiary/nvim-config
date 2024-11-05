@@ -23,7 +23,7 @@ return {
                     map('editor.send_block', { 'i', 'n' }),
                     map('editor.send_selection', 'x'),
                 },
-                ['p'] = map('postwin.toggle'),
+                ['<CR>'] = map('postwin.toggle'),
                 ['<Cs-P>'] = map('postwin.clear', { 'n', 'i' }),
                 ['<C-.>'] = map('sclang.hard_stop', { 'n', 'x', 'i' }),
                 ['<leader>ss'] = map('sclang.start'),

@@ -19,8 +19,7 @@ return {
 
     -- 補全視窗
     {
-        'hrsh7th/nvim-cmp',
-        config = function()
+        'hrsh7th/nvim-cmp', config = function()
             local cmp = require('cmp')
             local luasnip = require("luasnip")
             -- Vs code-like --> friendly snippet
@@ -90,6 +89,9 @@ return {
                     { name = 'buffer' },
                 })
             })
+
+            -- code action shortcut
+            vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
         end
     },
     {

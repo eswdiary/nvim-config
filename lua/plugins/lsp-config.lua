@@ -15,7 +15,7 @@ return {
             require("mason-lspconfig").setup(
                 {
                     -- 確保安裝
-                    ensure_installed = { "lua_ls" },
+                    ensure_installed = { "lua_ls"},
                 })
         end
     },
@@ -25,13 +25,12 @@ return {
         "neovim/nvim-lspconfig",
         config = function()
             local lspconfig = require('lspconfig')
-
             -- cmp-nvim-lsp 的設定項
             local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
             lspconfig.lua_ls.setup({
                 -- cmp-nvim-lsp 的設定項
-                capabilities = capabilities
+                capabilities = capabilities,
             })
 
             -- 這個 binding 目前已經是 plugin 的預設置了

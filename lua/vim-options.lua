@@ -11,7 +11,6 @@ vim.opt.swapfile = false        -- 禁用 swap file
 vim.opt.conceallevel = 2        -- 收合 markdown 語法的 link
 
 -- vim.api.nvim_set_option("clipboard", "unnamedplus")     -- 打通系統 clipboard，wayland 需裝 wl-clipboard
-
 vim.wo.number = true            -- 顯示行號
 vim.wo.relativenumber = true    --顯示相對行號
 
@@ -25,8 +24,11 @@ vim.keymap.set('n', '<leader>h', ':bprevious<CR>')
 
 vim.keymap.set('n', '<M-w>', ':bd<CR>', { noremap = true, silent = true})     -- 關閉 Buffer 而不是整個 nvim
 vim.keymap.set('n', '<M-r>', ':vsp<CR>', { noremap = true, silent = true})      -- 垂直分割
+vim.keymap.set('n', '<Ms-r>', ':sp<CR>', { noremap = true, silent = true})      -- 水平分割
 vim.keymap.set('n', '<M-l>', '<C-w>l', { noremap = true, silent = true})      -- 垂直分割（向右移動）
 vim.keymap.set('n', '<M-h>', '<C-w>h', { noremap = true, silent = true})      -- 垂直分割（向左移動）
+vim.keymap.set('n', '<M-j>', '<C-w>j', { noremap = true, silent = true})      -- 水平分割（向下移動）
+vim.keymap.set('n', '<M-k>', '<C-w>k', { noremap = true, silent = true})      -- 水平分割（向上移動）
 
 -- Plugins --
 vim.opt.termguicolors = true    -- Bufferline 文檔要求
