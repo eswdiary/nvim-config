@@ -26,7 +26,11 @@ require("lazy").setup({
     },
     -- 其他設置
     install = { colorscheme = { "habamax" } },
-    checker = { enabled = true },
+    checker = {
+        enabled = true,
+        -- No more notification
+        notify = false,
+    },
 })
 -- ~/.config/nvim/lua/plugins 底下 return 的整合
 
