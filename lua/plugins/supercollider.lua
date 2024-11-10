@@ -39,9 +39,13 @@ return {
             },
             postwin = {
                 float = {
-                    enabled = true,
+                    enabled = false,
                 },
             },
+            -- 覺得沒有比較方便就是了……
+            -- documentation = {
+            --     cmd = '/usr/bin/pandoc',
+            -- },
         })
     end
 }
