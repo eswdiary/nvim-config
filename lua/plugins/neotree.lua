@@ -50,6 +50,13 @@ return {
                     ["h"] = "navigate_up",
                 },
             },
+            filesystem = {
+                filtered_items = {
+                    visible = true,
+                    hide_dotfiles = true,
+                    hide_gitignored = true,
+                },
+            },
 
         }
 
