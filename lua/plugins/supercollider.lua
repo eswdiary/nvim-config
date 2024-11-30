@@ -39,7 +39,7 @@ return {
             },
             postwin = {
                 float = {
-                    enabled = false,
+                    enabled = true,
                 },
             },
             -- 覺得沒有比較方便就是了……
