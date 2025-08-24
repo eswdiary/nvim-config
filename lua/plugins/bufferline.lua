@@ -3,8 +3,8 @@ return {
     version = "*",
 
     config = function()
-        local bufferLine = require("bufferline")
-        bufferLine.setup {
+        require("bufferline").setup{
+            options = {}
         }
     end
 }
