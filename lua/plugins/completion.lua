@@ -26,7 +26,7 @@ return {
             require("luasnip.loaders.from_vscode").lazy_load()
 
             -- supercollider 載入 snippet
-            luasnip.add_snippets("supercollider", require("scnvim/utils").get_snippets())
+            -- luasnip.add_snippets("supercollider", require("scnvim/utils").get_snippets())
 
             cmp.setup({
                 snippet = { -- REQUIRED - you must specify a snippet engine

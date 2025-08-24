@@ -9,10 +9,6 @@ return {
         -- snippet 設定
         vim.g.scnvim_snippet_format = "luasnip"
 
-        -- eval flash 設定 
-        vim.g.scnvim_eval_flash_duration = 300
-        vim.g.scnvim_eval_flash_repeats = 1
-
         -- doc 的顯示設定
         -- vim.g.scnvim_scdoc = 1
 
@@ -39,13 +35,9 @@ return {
             },
             postwin = {
                 float = {
-                    enabled = true,
+                    enabled = false,
                 },
             },
-            -- 覺得沒有比較方便就是了……
-            -- documentation = {
-            --     cmd = '/usr/bin/pandoc',
-            -- },
         })
     end
 }
