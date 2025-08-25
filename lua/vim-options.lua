@@ -32,4 +32,3 @@ vim.keymap.set('n', '<M-k>', '<C-w>k', { noremap = true, silent = true})      --
 
 -- Plugins --
 vim.opt.termguicolors = true    -- Bufferline 文檔要求
-

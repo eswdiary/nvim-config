@@ -6,12 +6,6 @@ return {
         local map = scnvim.map
         local map_expr = scnvim.map_expr
 
-        -- snippet 設定
-        vim.g.scnvim_snippet_format = "luasnip"
-
-        -- doc 的顯示設定
-        -- vim.g.scnvim_scdoc = 1
-
         scnvim.setup({
             keymaps = {
                 ['<C-e>'] = map('editor.send_line', { 'i', 'n' }),
@@ -27,17 +21,27 @@ return {
                 ['<C-b>'] = map_expr('s.boot'),
                 ['<F3>'] = map_expr('s.meter'),
             },
+
             editor = {
                 highlight = {
                     color = 'IncSearch',    -- IncSearch, TermCursor
                     type = 'flash',     -- flash, fade
                 },
             },
+
             postwin = {
                 float = {
                     enabled = false,
                 },
             },
+
+            snippet = {
+                engine = { 
+                    name = 'luasnip',
+                    options = { descriptions = true }
+                },
+            }
         })
     end
 }
+
