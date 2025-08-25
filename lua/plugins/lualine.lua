@@ -14,7 +14,7 @@ return {
 
         require("lualine").setup {
             options = {
-                theme = "gruvbox_dark", -- 見 Github lualine.nvim/THEMES
+                theme = "gruvbox-material", -- 見 Github lualine.nvim/THEMES
             },
             sections = {
                 lualine_a = { 'mode' },

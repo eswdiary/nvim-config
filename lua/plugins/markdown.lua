@@ -16,10 +16,19 @@ return {
                 },
 
                 heading  = {
-                    enabled = false,
+                    enabled = false
                 },
-                
+
+                code = {
+                    sign = false,
+                },
+
+                bullet = {
+                    icons = { '', '', '◆', '◇' },
+                }, 
             })
+
+            vim.keymap.set('n', '<leader>e', ':RenderMarkdown toggle<CR>')    -- 切換 Buffer
         end
     }    
 }
