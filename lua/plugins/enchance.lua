@@ -63,5 +63,18 @@ return {
             -- damping_insert_mode = 0.95,           -- 0.9      [0, 1]
             -- distance_stop_animating = 0.5,        -- 0.1      > 0
         },
-    }
+    },
+
+    {
+        -- TODO 標記
+        "folke/todo-comments.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        opts = { 
+            keywords = { 
+                HACK = { alt = { "EXAMPLE" } }
+            }
+        },
+
+        vim.keymap.set('n','<M-t>', ':TodoTelescope<CR>')
+    },
 }

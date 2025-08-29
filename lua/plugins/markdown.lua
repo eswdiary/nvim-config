@@ -28,7 +28,8 @@ return {
                 }, 
             })
 
-            vim.keymap.set('n', '<leader>e', ':RenderMarkdown toggle<CR>')    -- 切換 Buffer
+            -- 切換預覽
+            vim.keymap.set('n', '<leader>e', ':RenderMarkdown toggle<CR>')
         end
     }    
 }

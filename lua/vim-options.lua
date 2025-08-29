@@ -4,8 +4,6 @@ vim.cmd("set tabstop=4")        -- tab 字元在文件中顯示的寬度，僅�
 vim.cmd("set softtabstop=4")    -- tab 鍵插入的空格數
 vim.cmd("set shiftwidth=4")     -- 使用 << 或 >> 所縮排的空格
 
-vim.g.mapleader = " "           -- 設定 leader key
-
 vim.opt.swapfile = false        -- 禁用 swap file
 
 vim.opt.conceallevel = 2        -- 收合 markdown 語法的 link

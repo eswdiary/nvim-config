@@ -9,16 +9,16 @@ return {
         scnvim.setup({
             keymaps = {
                 ['<C-e>'] = map('editor.send_line', { 'i', 'n' }),
-                ['<S-Enter>'] = {
+                ['<leader>se'] = {
                     map('editor.send_block', { 'i', 'n' }),
                     map('editor.send_selection', 'x'),
                 },
                 ['<CR>'] = map('postwin.toggle'),
                 ['<Cs-P>'] = map('postwin.clear', { 'n', 'i' }),
                 ['<C-.>'] = map('sclang.hard_stop', { 'n', 'x', 'i' }),
-                ['<leader>ss'] = map('sclang.start'),
-                ['<leader>sr'] = map('sclang.recompile'),
-                ['<C-b>'] = map_expr('s.boot'),
+                ['<leader>ss'] = map('sclang.start', { 'n' }),
+                ['<leader>sr'] = map('sclang.recompile', { 'n' }),
+                ['<leader>sb'] = map_expr('s.boot', { 'n' }),
                 ['<F3>'] = map_expr('s.meter'),
             },
 

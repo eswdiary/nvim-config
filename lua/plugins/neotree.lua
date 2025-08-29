@@ -10,6 +10,7 @@ return {
     },
     lazy = false,
 
+    
     -- 設定 Neo-tree
     config = function()
         local neoTree = require('neo-tree')
@@ -50,6 +51,7 @@ return {
                     ["h"] = "navigate_up",
                 },
             },
+
             filesystem = {
                 filtered_items = {
                     visible = true,
@@ -57,11 +59,10 @@ return {
                     hide_gitignored = true,
                 },
             },
-
         }
-
         -- 設定 shortcut
         vim.keymap.set('n', '<M-e>', ':Neotree source=filesystem reveal=true position=float toggle=true<CR>')
         -- postition = left, right, top, bottom, float, current
     end
+    
 }
