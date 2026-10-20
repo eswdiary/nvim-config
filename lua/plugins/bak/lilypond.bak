@@ -1,0 +1,29 @@
+return {
+	{
+		"martineausimon/nvim-lilypond-suite",
+		opts = {
+			lilypond = {
+				mappings = {
+					player = "<F3>",
+					compile = "<F5>",
+					open_pdf = "<F6>",
+					switch_buffers = "<A-Space>",
+					insert_version = "<F4>",
+					hyphenation = "<F12>",
+					hyphenation_change_lang = "<F11>",
+					insert_hyphen = " ",        -- <leader>ih
+					add_hyphen = " ",           -- <leader>ah
+					del_next_hyphen = " ",      -- <leader>dh
+					del_prev_hyphen = " ",      -- <leader>dH
+				},
+			},
+			player = {
+				options = {
+					fluidsynth_flags = {
+						"/Volumes/Libraries/SoundFont/DSoundFontV4.sf2",
+					},
+				},
+			},
+		},
+	},
+}
